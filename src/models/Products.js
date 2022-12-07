@@ -20,27 +20,23 @@ module.exports = (sequelize) => {
             unique: true,
             allowNull: false,
         },
-        last_name: {
-            type: DataTypes.STRING,
-            allowNull: false,
+        ingredients: {
+            type: DataTypes.STRING
         },
-        password: {
-            type: DataTypes.STRING,
+        summary: {
+            type: DataTypes.TEXT
         },
-        phone: {
+        price: {
+            type: DataTypes.STRING
+        },
+        idBranch: {
             type: DataTypes.INTEGER
         },
-        orders: {
-            type: DataTypes.STRING
-        },
-        address: {
-            type: DataTypes.STRING
-        },
-        stock: {
+        idCategory: {
             type: DataTypes.INTEGER
         },
-        count_type: {
-            type: DataTypes.STRING
+        image: {
+            type: DataTypes.TEXT
         }
     },
         {
